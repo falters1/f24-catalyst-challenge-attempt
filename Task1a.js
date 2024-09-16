@@ -22,7 +22,9 @@ const todoList = [];
  * 
  */
 function addAndPrintTodos() {
-    // YOUR CODE HERE
+    todoList.push("Apply to y/cs!", "Pick out my classes", "Have dinner with my suite")
+    for (i = 0; i < todoList.length; i++)
+        console.log((i+1) + ": " + todoList[i]);
 }
 
 /**

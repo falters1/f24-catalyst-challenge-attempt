@@ -16,13 +16,14 @@ todoList = [];
  * In addition to updating function names, only modify the file under 
  * the "// YOUR CODE HERE" comments.
  */
-
-function __todo(todoString) {
-    // YOUR CODE HERE
+"Apply to y/cs!", "Pick out my classes", "Have dinner with my suite"
+function pushtodo(todoString) {
+    todoList.push(todoString)
 }
 
-function __todo() {
-    // YOUR CODE HERE
+function printtodo() {
+    for (i = 0; i < todoList.length; i++)
+        console.log((i+1) + ": " + todoList[i]);
 }
 
 /**
@@ -31,7 +32,10 @@ function __todo() {
  * we do it here
  */
 function mainTask1b() {
-    // YOUR CODE HERE (simply call the functions you implemented above)
+    pushtodo("Apply to y/cs!");
+    pushtodo("Pick out my classes");
+    pushtodo("Have dinner with my suite");
+    printtodo();
 }
 
 // This bit of code ensures that a main method exists! If it doesn't, then it throws an error
